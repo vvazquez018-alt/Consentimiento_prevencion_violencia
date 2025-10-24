@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> consentimiento y conciencia de la violencia sexual</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-heart-fill text-primary"></i>
+               consentimiento y conciencia de la violencia sexual 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="temasDropdown" role="button" data-bs-toggle="dropdown">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="salud-fisica-mental.html">Salud Física y Mental</a></li>
+                            <li><a class="dropdown-item" href="prevencion-adicciones.html">Prevención de Adicciones</a></li>
+                            <li><a class="dropdown-item" href="salud-sexual.html">Salud Sexual</a></li>
+                            <li><a class="dropdown-item" href="bienestar-integral.html">Bienestar Integral</a></li>
+                            <li><a class="dropdown-item" href="educacion-financiera.html">Educación Financiera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recursos.html">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <!-- carrusel -->
+    <section id="inicio" class="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/imagen rosa.jpeg" width="100%">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 style="color:black">El consentimiento no se asume, se pregunta</h1>
+            <p style="color:black">Tu cuerpo, tus reglas, tu decisión </p>
+            <button id="btn-donar" class="btn btn-warning fw-bold">pide ayuda</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/consentimiento.jpeg" width="100%">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 style="color:black">Hablar del consentimiento es hablar de respeto</h1>
+            <p style="color:black">El respeto no se negocia</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/violencia.jpeg" width="100%">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 style="color:black">La educación es la primera forma de prevención</h1>
+            <p style="color:black">Escuchar también es una forma de cuidar.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+    <!-- Sección Hero -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="#" id="categoria-breadcrumb">Categoría</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" id="tema-breadcrumb">Tema</li>
+                        </ol>
+                    </nav>
+                    <h1 id="titulo-tema">Consentimiento y Prevención de la Violencia Sexual</h1>
+                    <p class="lead" id="descripcion-tema">Conoce qué es el consentimiento, cómo prevenir la violencia sexual y qué acciones ayudan a construir relaciones seguras y respetuosas.</p>
+                    <button class="btn btn-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        <i class="bi bi-info-circle"></i> Información Importante
+                    </button>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="hero-icon">
+                        <i class="bi bi-heart-pulse"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-lg-8">
+                <!-- Introducción -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Introducción</h2>
+                        <p id="introduccion-contenido">La violencia sexual es un problema que afecta a miles de jóvenes en México y el mundo. Comprender la importancia del consentimiento es fundamental *para prevenir agresiones y promover el respeto* en todas las relaciones. Este tema busca informar y crear conciencia sobre la importancia de la educación, la empatía y la igualdad de género.</p>
+                        
+                        <!-- Componente Bootstrap: Tooltip -->
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es un ejemplo de tooltip con información adicional">
+                            <i class="bi bi-question-circle"></i> Información adicional
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Sección de Información -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Información Clave</h2>
+                        
+                        <!-- Componente Bootstrap: Acordeón -->
+                        <div class="accordion" id="infoAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Violencia Sexual
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+                                    <div class="accordion-body">
+                                        <p>cualquier acto o intento de naturaleza sexual sin consentimiento, que afecta el libre desarrollo de la vida sexual. Puede ocurrir en espacios físicos o digitales, por parte de personas conocidas o desconocidas.
+</p>
+                                        
+                                        <!-- Componente Bootstrap: Popover -->
+                                        <button type="button" class="btn btn-info btn-sm" data-bs-toggle="popover" data-bs-title="Dato importante" data-bs-content="Este es un dato relevante que merece atención especial.">
+                                            <i class="bi bi-lightbulb"></i> Dato importante
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                       Consentimiento Sexual
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                                    <div class="accordion-body">
+                                        Es un acuerdo libre, informado y voluntario para participar en una actividad sexual. Debe mantenerse durante todo momento y expresarse de forma clara, ya sea verbal o no verbal. La ausencia de negación no equivale a consentimiento
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                       Marco Legal
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                                    <div class="accordion-body">
+                                       ⁠Internacional: Organismos como la OMS, ONU Mujeres y UNESCO impulsan la prevención, atención y educación en igualdad.
+México:La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia define y sanciona la violencia sexual, promoviendo la coordinación entre los distintos niveles de gobierno.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Estadísticas o Datos -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Datos Relevantes</h2>
+                        
+                        <!-- Componente Bootstrap: Cards -->
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <h3 class="display-6 text-primary">75%</h3>
+                                        <p class="card-text">de jóvenes no conoce claramente el significado del consentimiento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <h3 class="display-6 text-success">40%</h3>
+                                        <p class="card-text">de los casos de violencia sexual pueden prevenirse con educación adecuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center h-100">
+                                    <div class="card-body">
+                                        <h3 class="display-6 text-warning">90%</h3>
+                                        <p class="card-text">de los jóvenes busca información sobre el tema en internet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recursos y Ayuda -->
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Recursos de Ayuda</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                Línea Mujeres: <strong> 800-422-5256 </strong>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-globe text-primary me-2"></i>
+                                Sitio web: <a href="#">https://www.gob.mx/inmujeres</a>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                Centros de apoyo: ACAMBAY LUNES A VIERNES DE 09:00 A 18:00 HRS LUNES A DOMIGO DE 24 HRS.  REFERENCIAS: DENTRO DE LA CASA DE LA MUJER
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Barra Lateral -->
+            <div class="col-lg-4">
+                <!-- Tarjeta de Información Rápida -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="bi bi-lightning-charge"></i> Datos Rápidos</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Información verificada</li>
+                            <li class="mb-2"><i class="bi bi-shield-check text-info me-2"></i> Fuentes confiables (OMS, ONU Mujeres, INMUJERES)</li>
+                            <li class="mb-2"><i class="bi bi-chat-heart text-danger me-2"></i> Enfoque empático y preventivo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enlaces a Otros Temas -->
+                <div class="card mb-4">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0"><i class="bi bi-link-45deg"></i> Temas Relacionados</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action"> ⁠Igualdad de género y derechos humanos</a>
+                            <a href="#" class="list-group-item list-group-item-action"> ⁠Salud emocional y relaciones sanas</a>
+                            <a href="#" class="list-group-item list-group-item-action"> ⁠Educación sexual integral</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Llamada a la Acción -->
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5>¿Necesitas ayuda?</h5>
+                        <p>Si has vivido una situación de violencia o conoces a alguien que la atraviesa, busca apoyo profesional. No estás sola ni solo.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            Contactar Especialista
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>consentimiento y conciencia de la violencia sexual</h5>
+                    <p>Información confiable para jóvenes sobre temas de conciencia social.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Inicio</a></li>
+                        <li><a href="recursos.html" class="text-white-50">Recursos</a></li>
+                        <li><a href="contacto.html" class="text-white-50">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Privacidad</a></li>
+                        <li><a href="#" class="text-white-50">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2023 consentimiento y conciencia de la violencia sexual. Todos los derechos reservados/ consetimiento y prevencion de violencia sexual.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Información Importante -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Información Importante</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>La violencia sexual se define como cualquier acto, tentativa o conducta que vulnere la libertad y seguridad sexual de una persona mediante el uso de la fuerza, la coacción, la manipulación o cualquier forma de presión psicológica.</p>
+                    <p>Este tipo de violencia constituye una grave violación a los derechos humanos y afecta de manera significativa la integridad física, emocional y social de las víctimas, sin distinción de edad, género o condición.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contacto -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contactar Especialista</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Área para Toast (aparecerá en la esquina inferior derecha) -->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <!-- Los toasts se agregarán aquí dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="project.js"></script>
+</body>
+</html>
