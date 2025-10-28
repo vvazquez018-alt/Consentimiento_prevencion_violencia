@@ -1,0 +1,216 @@
+.hero .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color:#333;
+}
+
+.hero .carousel-caption {
+  bottom: 30%;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+
+
+:root {
+    --primary-color: #d16066;
+    --secondary-color: #da6a8c;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #dd76b2;
+    --warning-color: #ed5e90;
+    --info-color: #de77b8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding-top: 76px; /* Para compensar la navbar fija */
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand i {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: rgb(0, 0, 0);
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-section .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.hero-section .breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-section .breadcrumb-item.active {
+    color: white;
+}
+
+.hero-section .breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-icon {
+    font-size: 8rem;
+    opacity: 0.7;
+}
+
+/* Sección de Títulos */
+.section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Botones */
+.btn {
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #e060a4;
+    border-color: #f075a8;
+    transform: translateY(-2px);
+}
+
+/* Acordeón */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(217, 105, 194, 0.1);
+    color: var(--primary-color);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+footer a:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .hero-icon {
+        font-size: 5rem;
+        margin-top: 1rem;
+    }
+    
+    body {
+        padding-top: 66px;
+    }
+}
+
+/* Utilidades */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Estilos para tooltips personalizados */
+.tooltip-inner {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--primary-color);
+}
+
+/* Estilos para popovers personalizados */
+.popover {
+    border: 1px solid var(--secondary-color);
+}
+
+.popover-header {
+    background-color: var(--secondary-color);
+    color: white;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/* Estilos para toasts personalizados */
+.toast {
+    background-color: white;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.toast-header {
+    background-color: rgba(219, 52, 205, 0.1);
+}
+
+.card .mb-4{
+background-color: #da6a8c;
+    }
